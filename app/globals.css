@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Light.otf') format('opentype');
+  font-weight: 400; /* normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Bold.otf') format('opentype');
+  font-weight: 700; /* bold */
+  font-style: normal;
+}
+
+body {
+  font-family: 'Satoshi', Helvetica, sans-serif !important;
+}
+
+h1 {
+  font-family: 'Satoshi', Helvetica, sans-serif !important;
+  font-weight: 700;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 22px;
+}
+p {
+  font-size: 14px; /* Default font size for mobile */
+  line-height: 1.5;
+}
+
+/* Adjust the font size for larger screens */
+@media (min-width: 768px) {
+  p {
+    font-size: 16px; /* Font size for tablets and desktops */
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+/* 
+/* Hide scrollbar for Chrome, Safari, and Edge */
+
+/* Hide scrollbar for Internet Explorer, Edge, and Firefox */
+
+/*  */
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+.dropdown {
+  opacity: 0;
+  height: 75px;
+  padding: 0px;
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out,
+    height 0.2s ease-in-out, padding 0.2 ease-in-out;
+}
+
+.dropdown-enter {
+  opacity: 1;
+  height: 200px;
+  padding: 40px;
+}
+.dropdown-exit {
+  opacity: 1;
+  height: 75px;
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .dropdown-exit {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .dropdown-exit {
+    opacity: 0;
+  }
+}
+
+.content2 h2 {
+  @apply text-2xl sm:text-3xl md:text-4xl font-bold pb-4;
+}
+.content2 h3 {
+  @apply text-xl sm:text-2xl md:text-3xl font-semibold border-b max-w-fit pb-2 text-blue;
+}
+.content2 h4 {
+  @apply text-lg sm:text-xl md:text-2xl font-semibold;
+}
+
+.content2 p {
+  @apply text-sm sm:text-base py-1;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
