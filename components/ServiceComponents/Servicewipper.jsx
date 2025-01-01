@@ -71,7 +71,7 @@ const Serviceswipper = () => {
         </Slider>
 
         {/* Navigation Buttons */}
-        <div className="flex justify-center xl:justify-end mt-4 space-x-4">
+        <div className="flex justify-center  mt-4 space-x-4 absolute top-[80%] md:top-[60%] left-[15%] md:left-[70%]">
           <button
             onClick={() => sliderRef.current.slickPrev()}
             className="px-3 py-2 border text-black border-black rounded-full shadow-md hover:bg-black hover:text-white transition-all"
@@ -92,7 +92,7 @@ const Serviceswipper = () => {
 
 const SliderElement = ({ img, name, author, stars }) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between gap-y-6 px-4">
+    <div className="flex flex-col md:flex-row items-center justify-between gap-y-6 px-4">
       {/* Book Image */}
       <div className="w-full lg:w-1/2 flex justify-center lg:pr-10">
         <Image
@@ -106,7 +106,7 @@ const SliderElement = ({ img, name, author, stars }) => {
       </div>
 
       {/* Book Details */}
-      <div className="w-full lg:w-1/2 flex flex-col items-start text-left space-y-4 lg:pl-10">
+      <div className="w-full lg:w-1/2 flex flex-col items-start text-left space-y-4 md:pl-20">
         <div className="flex space-x-1">
           {Array.from({ length: stars }, (_, i) => (
             <Star key={i} fill="gold" />
