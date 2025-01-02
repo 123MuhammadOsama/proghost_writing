@@ -18,9 +18,9 @@ const Expect = () => {
     <div className='py-10 px-4 2xl:px-40'>
         <h2 className='text-[26px] lg:text-[28px] font-bold'>What to Expect When <span className='text-[#11A4FF]'>Writing a Book</span> on Your Own?</h2>
 
-        <div className="h-screen flex justify-center items-center border border-gray-300 m-8">
+        <div className="h-screen flex justify-center items-center border border-gray-300 m-3 sm:m-8">
       <div className="w-[95%] h-[95%] overflow-y-scroll no-scrollbar bg-white ">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {Array(8)
             .fill(textBlock)
             .map((block, index) => (

@@ -33,6 +33,22 @@ const FAQ1 = () => {
       question: "What payment methods do you accept?",
       answer: `For your convenience, we accept multiple secure payment options, including credit cards, debit cards, PayPal, and other online methods. Keep an eye on our website and follow us on social media to stay updated on our latest offers!.`,
     },
+    {
+      question: "What payment methods do you accept?",
+      answer: `For your convenience, we accept multiple secure payment options, including credit cards, debit cards, PayPal, and other online methods. Keep an eye on our website and follow us on social media to stay updated on our latest offers!.`,
+    },
+    {
+      question: "What payment methods do you accept?",
+      answer: `For your convenience, we accept multiple secure payment options, including credit cards, debit cards, PayPal, and other online methods. Keep an eye on our website and follow us on social media to stay updated on our latest offers!.`,
+    },
+    {
+      question: "lorem",
+      answer: `For your convenience, we accept multiple secure payment options, including credit cards, debit cards, PayPal, and other online methods. Keep an eye on our website and follow us on social media to stay updated on our latest offers!.`,
+    },
+    {
+      question: "What payment methods do you accept?",
+      answer: `For your convenience, we accept multiple secure payment options, including credit cards, debit cards, PayPal, and other online methods. Keep an eye on our website and follow us on social media to stay updated on our latest offers!.`,
+    },
   ];
 
   // Divide FAQ items into two columns

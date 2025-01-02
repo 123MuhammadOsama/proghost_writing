@@ -71,7 +71,7 @@ const Serviceswipper = () => {
         </Slider>
 
         {/* Navigation Buttons */}
-        <div className="flex justify-center  mt-4 space-x-4 absolute top-[80%] md:top-[60%] left-[15%] md:left-[70%]">
+        <div className="flex justify-center  mt-4 space-x-4 absolute top-[90%] md:top-[60%] left-[15%] md:left-[70%]">
           <button
             onClick={() => sliderRef.current.slickPrev()}
             className="px-3 py-2 border text-black border-black rounded-full shadow-md hover:bg-black hover:text-white transition-all"
