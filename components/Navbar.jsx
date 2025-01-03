@@ -173,7 +173,7 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <Link href="/about" className="text-md font-medium hover:text-[#124680]" onClick={() => setIsSidebarOpen(false)}>About Us</Link>
-          <Link href="#" className="text-md font-medium hover:text-[#124680]" onClick={() => setIsSidebarOpen(false)}>Services</Link>
+          <Link href="service" className="text-md font-medium hover:text-[#124680]" onClick={() => setIsSidebarOpen(false)}>Services</Link>
           <Link href="/contactus" className="text-md font-medium hover:text-[#124680]" onClick={() => setIsSidebarOpen(false)}>Contact Us</Link>
 
           {/* Contact Section in the Sidebar */}

@@ -60,7 +60,7 @@ const FAQ1 = () => {
       <h2 className="text-black font-bold text-2xl md:text-3xl text-center mb-10">
         Frequently Asked Questions
       </h2>
-      <div className="flex flex-wrap gap-6 w-full">
+      <div className="flex flex-col lg:flex-row flex-wrap gap-6 w-full">
         {/* Column 1 */}
         <div className="flex-1 flex flex-col gap-6">
           {column1.map((item, index) => (
